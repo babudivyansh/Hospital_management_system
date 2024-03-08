@@ -24,7 +24,7 @@ class Patient(BaseModel):
 class Doctor(BaseModel):
     doctor_name: str
     doctor_specialization: str
-    doctor_phone_number: str
+    doctor_phone_number: int
     doctor_email: Optional[str] = None
 
 
