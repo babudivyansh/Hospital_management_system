@@ -3,7 +3,7 @@ def doctor_entity(item) -> dict:
         "id": str(item["_id"]),
         "doctor_name": str(item["doctor_name"]),
         "doctor_specialization": str(item["doctor_specialization"]),
-        "doctor_phone_number": str(item["doctor_phone_number"]),
+        "doctor_phone_number": int(item["doctor_phone_number"]),
         "doctor_email": str(item["doctor_email"])
     }
 
