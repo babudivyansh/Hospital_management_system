@@ -17,7 +17,7 @@ class Patient(BaseModel):
     patient_age: int
     patient_gender: str
     patient_address: str
-    patient_phone_number: str
+    patient_phone_number: int
     patient_email: Optional[str] = None
 
 
