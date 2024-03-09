@@ -26,3 +26,18 @@ def department_entity(item) -> dict:
 
 def departments_entity(entity) -> list:
     return [department_entity(item) for item in entity]
+
+
+def patient_entity(item) -> dict:
+    return {
+        "patient_name": str(item["patient_name"]),
+        "patient_age": str(item["patient_age"]),
+        "patient_gender": str(item["patient_gender"]),
+        "patient_address": str(item["patient_address"]),
+        "patient_phone_number": int(item["patient_phone_number"]),
+        "patient_email": str(item["patient_email"])
+    }
+
+
+def patients_entity(entity) -> list:
+    return [patient_entity(item) for item in entity]
